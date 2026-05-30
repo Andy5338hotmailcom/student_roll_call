@@ -4,7 +4,8 @@
     "start_url": "/",
     "display": "standalone",
     "background_color": "#6C63FF",
-    "theme_color": "#6C63FF",
+    "theme_color": "#F3F4F6",
+    "display_override": ["window-controls-overlay"],
     "icons": [
         {
             "src": "src.ico",
