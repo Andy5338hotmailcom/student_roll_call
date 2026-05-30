@@ -13,6 +13,20 @@
     <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/css/font-awesome.min.css" rel="stylesheet">
     <!-- 统一的 Tailwind 配置 -->
     <script>
+        let deferredPrompt;
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            // 这里可以显示你自己的安装按钮
+            console.log("下载学生点名程序，直接使用！");
+        });
+        // 你可以绑定到按钮点击
+        function installPWA() {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+            }
+        }
         tailwind.config = {
             theme: {
                 extend: {
