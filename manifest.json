@@ -1,7 +1,7 @@
 {
     "name": "大雁学生点名程序",
     "short_name": "src",
-    "start_url": "/",
+    "start_url": "/student_roll_call",
     "display": "standalone",
     "background_color": "#6C63FF",
     "theme_color": "#F3F4F6",
